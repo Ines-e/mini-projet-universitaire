@@ -1,50 +1,76 @@
-
-
-.course-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-.course-item {
-    background-color: #f3f3f3;
-    border: 1px solid #ddd;
-    padding: 15px;
-    width: calc(33% - 20px); 
-    box-sizing: border-box;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-}
-.course-item:hover {
-    background-color: #e0e0e0;
-}
-.course-item h3 {
+/* Général */
+body {
     margin: 0;
-    font-size: 18px;
+    font-family: Arial, sans-serif;
+    background-color: #ecf0f1;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100vw;
+    height: 50vw;
+    background-color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.login h1 {
+    padding: 20px;
+    font-size: 30px;
     font-weight: bold;
-}
-.course-item p {
-    margin: 5px 0;
-}
-.course-item .code,
-.course-item .credits {
-    font-size: 14px;
-    color: #555;
+    color: #fff;
 }
 
-table {
+.login h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Formulaire */
+.login-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.form-input {
     width: 100%;
-    border-collapse: collapse;
-}
-th, td {
-    border: 1px solid #ddd;
     padding: 10px;
-    text-align: left;
-}
-th {
-    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/*bouton*/
+.form-input:focus {
+    border-color: #5e777c;
+    box-shadow: 0 0 5px rgba(94, 119, 124, 0.5);
+    outline: none;
+}
+
+/* Bouton */
 .btn {
     display: inline-block;
     background-color: #5e777c;
@@ -52,9 +78,29 @@ th {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 20px;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
     background-color: #93b39f;
+}
+
+/* Erreur */
+.error {
+    color: #e74c3c;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #000;
 }
